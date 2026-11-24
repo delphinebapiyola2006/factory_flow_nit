@@ -9,7 +9,7 @@ A local runnable prototype for the Centre for Digital Infrastructure, NIT Tiruch
 - SQLite keeps the evaluator setup lightweight. A hosted multi-user deployment should move to PostgreSQL and use schema migrations.
 
 ## Run on Windows
-Open PowerShell in the extracted project folder (the folder containing `requirements.txt`):
+
 
 ```powershell
 py -3.11 -m venv .venv
