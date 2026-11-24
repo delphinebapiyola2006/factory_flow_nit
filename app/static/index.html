@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FactoryFlow | Manufacturing ERP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div id="loginScreen" class="login-shell">
+  <div class="login-art">
+    <div class="brand light"><div class="brand-mark">F</div><span>FactoryFlow</span></div>
+    <div class="login-copy"><span class="eyebrow">SMART MANUFACTURING OPERATIONS</span><h1>From every order<br>to every audit.</h1><p>One connected workspace for sales, production, inventory and financial clarity.</p></div>
+    <div class="login-foot">NIT Trichy · CDI Internship Prototype <span>2026</span></div>
+  </div>
+  <div class="login-panel">
+    <div class="login-form-wrap"><div class="brand dark"><div class="brand-mark">F</div><span>FactoryFlow</span></div>
+      <span class="eyebrow muted">WELCOME BACK</span><h2>Sign in to your workspace</h2><p class="sub">Use your assigned role credentials to continue.</p>
+      <form id="loginForm"><label>Username</label><input id="username" value="admin" autocomplete="username" required><label>Password</label><input id="password" type="password" value="factory123" autocomplete="current-password" required><button class="primary full">Sign in <span>→</span></button><div id="loginError" class="error"></div></form>
+      <div class="demo-box"><strong>Demo access</strong><span>admin · salesa · salesb · production · auditor · owner</span><small>Password for all: factory123</small></div>
+    </div>
+  </div>
+</div>
+<div id="app" class="app-shell hidden">
+  <aside class="sidebar">
+    <div class="brand light"><div class="brand-mark">F</div><span>FactoryFlow</span></div>
+    <div class="workspace"><span class="workspace-dot"></span><div><b>South Foods Unit</b><small>Manufacturing workspace</small></div><span class="chevron">⌄</span></div>
+    <div class="nav-label">WORKSPACE</div><nav id="nav"></nav>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">✦</div><b>Need a hand?</b><p>Review the demo guide and benchmark workflow.</p><button onclick="showToast('See README.md for the complete benchmark walkthrough.')">View guide <span>↗</span></button></div><div class="side-version">FACTORYFLOW <span>v1.0.0</span></div></div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div class="crumb"><span>Workspace</span><b>/</b><strong id="pageCrumb">Overview</strong></div><div class="top-actions"><div class="status-pill"><i></i> System operational</div><button class="icon-btn" title="Notifications" onclick="showToast('You are all caught up.')">♧</button><div class="user-menu"><div class="avatar" id="avatar">FA</div><div><b id="userName">Factory Admin</b><small id="userRole">Administrator</small></div><button class="logout" onclick="logout()" title="Sign out">↪ <span>Logout</span></button></div></div></header>
+    <section class="content" id="content"></section>
+  </main>
+</div>
+<div id="toast" class="toast"></div>
+<script src="/static/app.js"></script>
+</body></html>
