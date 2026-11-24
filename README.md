@@ -2,6 +2,23 @@
 
 A local runnable prototype for the Centre for Digital Infrastructure, NIT Tiruchirappalli food-manufacturer order-to-audit problem. It uses only synthetic benchmark data.
 
+## 🌐 Live Demo
+
+**FactoryFlow – Manufacturing ERP Platform**
+
+🚀 **Live Website:** [https://factoryflow-nit.onrender.com](https://factoryflow-nit.onrender.com)
+
+FactoryFlow is deployed and accessible online through Render.
+
+### Deployment Details
+- **Hosting Platform:** Render
+- **Backend:** Python FastAPI
+- **Database:** SQLite (prototype configuration)
+- **Repository:** [GitHub – FactoryFlow NIT](https://github.com/delphinebapiyola2006/factory_flow_nit)
+
+### Demo Access
+Demo accounts are available for different roles, including Factory Admin, Owner, Salesperson, Production Supervisor and Auditor.
+
 ## Stack and rationale
 - **FastAPI + SQLite + vanilla JavaScript**: simple local setup, transparent REST endpoints and relational records that are easy to inspect during a technical interview.
 - **Integer paise + Python `Decimal`** for money and quantity calculations where applicable.
